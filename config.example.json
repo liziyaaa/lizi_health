@@ -1,0 +1,54 @@
+{
+  "project": "lizi Health Daily",
+  "version": "1.0-design",
+  "status": "design-only; no executable or signed shortcut",
+  "timezone": "device-local",
+  "report_date": "previous local calendar day",
+  "schedule": {
+    "trigger": "time-of-day",
+    "local_time": "09:00",
+    "enabled_after_device_validation": true
+  },
+  "windows": {
+    "sleep": {
+      "start": "previous day 18:00 local",
+      "planned_end": "current day 12:00 local",
+      "effective_end": "min(planned_end, generated_at)",
+      "selection": "interval overlaps window; retain original timestamps"
+    },
+    "heart_rate": {
+      "start": "previous day 00:00 local",
+      "end_exclusive": "current day 00:00 local"
+    },
+    "steps": {
+      "start": "previous day 00:00 local",
+      "end_exclusive": "current day 00:00 local",
+      "selection": "interval overlaps window; retain original timestamps"
+    }
+  },
+  "source_filter": {
+    "mode": "configure-on-device",
+    "source_name": null,
+    "retain_source_per_sample": true,
+    "sum_across_sources": false
+  },
+  "output": {
+    "schema_version": "1.0",
+    "filename": "health_YYYY-MM-DD.json",
+    "folder": "iCloud Drive/Shortcuts/lizi-health",
+    "overwrite_same_date": true
+  },
+  "email": {
+    "action_provider": "Apple Mail",
+    "account_provider_example": "Outlook",
+    "recipient": null,
+    "subject": "lizi Health Daily - YYYY-MM-DD",
+    "show_compose_sheet": true,
+    "enable_automatic_send_after_validation": true
+  },
+  "privacy": {
+    "include_source": true,
+    "no_passwords_or_api_keys": true,
+    "commit_real_health_records": false
+  }
+}

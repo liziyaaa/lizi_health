@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "is_example": true,
+  "report_date": "2026-10-14",
+  "generated_at": "2026-10-15T09:00:00+08:00",
+  "timezone": "Asia/Shanghai",
+  "windows": {
+    "sleep": {
+      "start": "2026-10-14T18:00:00+08:00",
+      "planned_end": "2026-10-15T12:00:00+08:00",
+      "end": "2026-10-15T09:00:00+08:00",
+      "window_complete": false
+    },
+    "heart_rate": {
+      "start": "2026-10-14T00:00:00+08:00",
+      "end_exclusive": "2026-10-15T00:00:00+08:00"
+    },
+    "steps": {
+      "start": "2026-10-14T00:00:00+08:00",
+      "end_exclusive": "2026-10-15T00:00:00+08:00"
+    }
+  },
+  "query_status": {
+    "sleep": "samples-returned",
+    "heart_rate": "samples-returned",
+    "steps": "samples-returned"
+  },
+  "sleep": [
+    {
+      "start": "2026-10-14T23:30:00+08:00",
+      "end": "2026-10-15T07:00:00+08:00",
+      "stage_raw": "Asleep (example)",
+      "source": "Mi Fitness (example)"
+    }
+  ],
+  "heart_rate": [
+    {
+      "start": "2026-10-14T08:00:00+08:00",
+      "end": "2026-10-14T08:00:00+08:00",
+      "bpm": 68,
+      "source": "Mi Fitness (example)"
+    }
+  ],
+  "steps": [
+    {
+      "start": "2026-10-14T08:00:00+08:00",
+      "end": "2026-10-14T08:15:00+08:00",
+      "count": 900,
+      "source": "Mi Fitness (example)"
+    }
+  ],
+  "warnings": [
+    "All sample values are fictional and demonstrate the proposed format only.",
+    "The sleep window has not ended at generation time.",
+    "No synchronization completeness or deduplicated daily total is implied."
+  ]
+}

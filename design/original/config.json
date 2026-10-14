@@ -1,0 +1,15 @@
+{
+  "project": "lizi Health Daily",
+  "version": "1.0-design",
+  "platform": "iOS Shortcuts",
+  "timezone": "device-local",
+  "schedule": "daily 09:00",
+  "sleep_window": "previous day 18:00 to current day 12:00",
+  "heart_rate_window": "previous calendar day",
+  "steps_window": "previous calendar day",
+  "output_filename": "health_YYYY-MM-DD.json",
+  "output_folder": "iCloud Drive/Shortcuts/lizi-health",
+  "email": {"provider": "Apple Mail (Outlook account)", "recipient": "configure on device", "subject": "lizi Health Daily - YYYY-MM-DD", "show_compose_sheet": false},
+  "privacy": {"include_source": true, "no_passwords_or_api_keys": true},
+  "status": "design only; not an importable signed shortcut"
+}

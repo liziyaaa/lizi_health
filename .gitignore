@@ -1,0 +1,28 @@
+# Real health reports and personal settings
+health_*.json
+!examples/health_example.json
+config.local.json
+data/
+reports/
+exports/
+apple_health_export/
+export.xml
+export_cda.xml
+export.zip
+
+# Credentials and local files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Only explicitly reviewed signed artifacts should be published later
+build/
+dist/
